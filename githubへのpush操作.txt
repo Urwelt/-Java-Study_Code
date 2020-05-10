@@ -1,10 +1,30 @@
+--git用のファイルを作成
 mkdir github
 cd github
 
+--カレントディレクトリをgit利用する
 git init
 
-git add /filename/
-git commit -m "-m�̓R�����g"
+--インデックスへ追加
+git add ファイル名
+--ローカルリポジトリへコミット
+git commit -m "-m comment"
 
+--リモートリポジトリの情報を追加
 git remote add origin https://github.com//xxxxxxx.git
+--ローカルリポジトリをpush
 git push origin master
+
+
+
+--ローカルリポジトリを確認
+git status
+
+--push時の整合性が取れなくなった場合の対応、非推奨
+git push -f
+
+--ブランチの確認
+git branch
+
+--ブランチの移動
+git checkout ブランチ名
