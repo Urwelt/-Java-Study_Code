@@ -1,0 +1,10 @@
+mkdir github
+cd github
+
+git init
+
+git add /filename/
+git commit -m "-m‚ÍƒRƒƒ“ƒg"
+
+git remote add origin https://github.com//xxxxxxx.git
+git push origin master
