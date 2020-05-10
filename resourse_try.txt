@@ -1,0 +1,17 @@
+import java.util.*;
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // 自分の得意な言語で
+        // Let's チャレンジ！！
+        try(Scanner in = new Scanner(System.in);){
+            int num = in.nextInt();
+        	for(int i=0; i < num; i++){
+            	System.out.print("*");
+        	}
+        }catch(Exception e){
+        	e.printStackTrace();
+        }
+    }
+}
