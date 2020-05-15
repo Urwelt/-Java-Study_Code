@@ -29,6 +29,3 @@ https://repo.spring.io/webapp/#/search/archive/
 
 正規表現
 https://regexr.com/
-
-android studio
-https://developer.android.com/studio
