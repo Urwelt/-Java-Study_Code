@@ -4,8 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Stream;
 
-
-public class P {
+public class CombinationMax {
     public static void main(String[] args) {    	
     	
     	try(Scanner in = new Scanner(System.in)){
