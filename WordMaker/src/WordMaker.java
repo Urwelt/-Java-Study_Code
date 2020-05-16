@@ -2,8 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-
-public class P {
+public class WordMaker {
 	
 	private static final String[] VALUE_ES = {"s","sh","ch", "o", "x"};
 	private static final String[]  VALUE_VES = {"f","fe"};
@@ -37,14 +36,14 @@ public class P {
     	List<String> result = new ArrayList<>();    	
     	        
         loop:for(String value : list){
-        	// VALUE_ES ƒ`ƒFƒbƒN
+        	// VALUE_ES ãƒã‚§ãƒƒã‚¯
         	for(String key : VALUE_ES) {
         		if(value.endsWith(key)){        			
         			result.add((new StringBuffer(value).append("es")).toString());
         			continue loop;
         		}        		
         	}
-        	// VALUE_VES ƒ`ƒFƒbƒN
+        	// VALUE_VES ãƒã‚§ãƒƒã‚¯
         	for(String key : VALUE_VES) {
         		if(value.endsWith(key)){        			
         			if(key.equals("f")){
@@ -60,7 +59,7 @@ public class P {
                     }          			
         		}
         	}
-        	// VALUE_IES ƒ`ƒFƒbƒN
+        	// VALUE_IES ãƒã‚§ãƒƒã‚¯
             if(value.endsWith("y")){
             	String tmp = value.substring(value.length()-2,value.length()-1);
             	for(String key : VALUE_IES) {
