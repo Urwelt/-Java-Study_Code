@@ -12,3 +12,4 @@
 | eclipse gradle | https://github.com/eclipse/buildship/blob/master/docs/user/Installation.md |
 | spring         | https://repo.spring.io/webapp/#/search/archive/              |
 | 正規表現       | https://regexr.com                                           |
+| サクラエディタ | https://sakura-editor.github.io/                             |
