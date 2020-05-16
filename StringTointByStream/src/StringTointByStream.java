@@ -1,8 +1,7 @@
 import java.util.Scanner;
 import java.util.stream.Stream;
 
-
-public class P {
+public class StringTointByStream {
     public static void main(String[] args) { 
     	
     	try(Scanner sc = new Scanner(System.in);){
