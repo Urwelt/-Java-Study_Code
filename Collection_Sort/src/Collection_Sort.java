@@ -3,7 +3,7 @@ import java.util.Collections;
 import java.util.List;
 
 
-public class P {
+public class Collection_Sort {
     public static void main(String[] args) {
 
     	int[] numbers = {-1, 2, 0, -3, 8};
@@ -14,16 +14,16 @@ public class P {
     	  numbersList.add(n);
     	}
     	
-		//[-3, -1, 0, 2, 8]ƒ‰ƒ€ƒ_Ž®‚ð—p‚¢‚È‚¢¸‡
+		//[-3, -1, 0, 2, 8]ãƒ©ãƒ ãƒ€å¼ã‚’ç”¨ã„ãªã„æ˜‡é †
     	Collections.sort(numbersList);
     	
-    	//[-3, -1, 0, 2, 8]¸‡
+    	//[-3, -1, 0, 2, 8]æ˜‡é †
     	Collections.sort(numbersList , (a,b) -> a-b);
     	
-    	//[8, 2, 0, -1, -3]~‡
+    	//[8, 2, 0, -1, -3]é™é †
     	Collections.sort(numbersList , (a,b) -> b-a);
     	
-    	//[0, -1, 2, -3, 8] â‘Î’l‡
+    	//[0, -1, 2, -3, 8] çµ¶å¯¾å€¤é †
     	Collections.sort(numbersList , (a,b) -> a*a - b*b);
     	System.out.println(numbersList.toString());
    	}
