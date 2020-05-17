@@ -2,7 +2,9 @@ package com.example.demo;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
+import Interface.Lightweight;
 import Interface.PasswordEncoder;
 import Interface.UserRepository;
 
@@ -30,8 +32,24 @@ public class AppConfig {
 		return new BCryptPasswordEncoder();
 	}
 	
+	//セッターインジェクションを定義する
 	@Bean
 	UseService userService() {
-		return UserServiceImpl(userRepository(), passwordEncoder());
+		UserServiceImpl userService = new UserServiceImpl();
+		userService.setUserRepository(userRepository());
+		userService.setPasswordEncoder(passwordEncoder());
+		return userService();
+	}
+	
+	@Bean
+	@Lightweight
+	PasswordEncoder sha256PasswordEncoder() {
+		return new Sha256PasswordEncoder();
+	}
+	
+	@Bean
+	@Primary
+	PasswordEncoder bcryptPasswordEncoder() {
+		return new BcryptPasswordEncoder();
 	}
 }
