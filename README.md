@@ -1,6 +1,5 @@
-# -Java-Study_Code
-学習・参考プログラム
-
+# Java言語の学習レポジト
+## Tools
 | Title          | URL                                                          |
 | -------------- | ------------------------------------------------------------ |
 | JDK            | https://www.oracle.com/java/technologies/javase-downloads.html |
