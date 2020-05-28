@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="jp" xmlns:th="http://www.thymeleaf.org">
     <head>
-        <title>index</title>
+        <title>hello</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link th:href="@{/css/css.css}" rel="stylesheet" type="text/css" />
 	</head>
     <body>
-    
      <div id="main">
+     
          <div id="header">
              <h1>Header Text ...</h1>
          </div>
@@ -17,12 +17,16 @@
         	<div class="home_link">
          		<a href="/">Home</a>
          	</div>
-         	<div class="form_link">
+         	 <div class="form_link">
          		<a href="/form">Go form!</a>
          	</div>
          </div>
          
-         <div id="contents"><h1>First Page!</h1></div>
+         <div id="contents">
+         	<div id="output_Name">
+         		<output th:text="'Hello&nbsp;' + ${name} + '!!'" ></output>
+         	</div>
+         </div>
          
          <div id="footer">
              <hr>

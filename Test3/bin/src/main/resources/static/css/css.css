@@ -20,11 +20,13 @@ body{
 #sidebar{
     width:250px;
     float:left;
+    background-color:#00ff00;
 }
 
 #contents{
     width: 550px;
     float:right;
+    background-color:#0000ff;
 }
 
 #footer{

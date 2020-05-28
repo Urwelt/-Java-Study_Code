@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="jp" xmlns:th="http://www.thymeleaf.org">
     <head>
-        <title>index</title>
+        <title>form</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link th:href="@{/css/css.css}" rel="stylesheet" type="text/css" />
 	</head>
     <body>
-    
      <div id="main">
+     
          <div id="header">
              <h1>Header Text ...</h1>
          </div>
          
          <div id="sidebar">
-        	<div class="home_link">
+            <div class="home_link">
          		<a href="/">Home</a>
          	</div>
          	<div class="form_link">
@@ -22,13 +22,17 @@
          	</div>
          </div>
          
-         <div id="contents"><h1>First Page!</h1></div>
+         <div id="contents">
+         	<form action="/hello" method="post">
+         		<input type="text" name = "name" />
+         		<input type="submit" name="submit">
+         	</form>
+         </div>
          
          <div id="footer">
              <hr>
              <address>Copy Right ...</address>
          </div>
-         
      </div>
     </body>
 </html>
