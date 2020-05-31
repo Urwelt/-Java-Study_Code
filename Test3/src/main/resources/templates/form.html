@@ -9,9 +9,9 @@
     <body>
      <div id="main">
      	 <!-- header -->
-         <div id="header" th:include = "template::header"></div>
+         <div th:replace = "template::template-header"></div>
          <!-- sidebar -->
-         <div id="sidebar" th:include = "template::sidebar">></div>
+         <div th:replace = "template::template-sidebar"></div>
          <!-- contents -->
          <div id="contents">
          	<form action="/hello" method="post">
@@ -20,7 +20,7 @@
          	</form>
          </div>
          <!-- footer -->
-         <div id="footer" th:include="template::footer"></div>
+         <div th:replace ="template::template-footer"></div>
     </div>
     </body>
 </html>

@@ -10,11 +10,11 @@
     <body>
      <div id="main">
      <!-- header -->
-         <div id="header" th:fragment="header">
+         <div id="header" th:fragment="template-header">
              <h1>Header Text ...</h1>
          </div>
 	<!-- sidebar -->
-         <div id="sidebar" th:fragment="sidebar">
+         <div id="sidebar" th:fragment="template-sidebar">
         	<div class="home_link">
          		<a href="/">Home</a>
          	</div>
@@ -23,9 +23,9 @@
          	</div>
          </div>
  	<!-- contents -->
-         <div id="contents" th:fragment="contents"><h1>Contents ....</h1></div>
+         <div id="contents" th:fragment="template-contents"></div>
 	<!-- footer -->
-         <div id="footer" th:fragment="footer">
+         <div id="footer" th:fragment="template-footer">
              <hr>
              <address>Copy Right ...</address>
          </div>
